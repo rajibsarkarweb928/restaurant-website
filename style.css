@@ -110,6 +110,7 @@ body {
   /* height: 65px; */
   padding: 12px 20px; 
   cursor: pointer;
+  margin-left: -1pc;
 }
 
 .btn button:hover {
@@ -237,17 +238,19 @@ body {
   text-align: center;
 }
 .btn-burger {
+  color: #f64b3c;
+  background-color: #ffffff;
   border: none;
   border-radius: 32px;
-  font-size: 15px;
-  color: #f64b3c;
-  width: 322px;
-  height: 65px;
+  font-size: 1rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
+  max-width: 332px;
+  /* height: 65px; */
+  padding: 12px 20px;
   cursor: pointer;
-  background-color: #ffffff;
-  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* 🔥 button center */
 
 }
 .btn-burger:hover {
@@ -265,44 +268,16 @@ body {
   object-fit: cover;
 }
 .burger-section2 {
-    /* padding: 80px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 799px;
-    background-image: url(img/burger-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    box-sizing: border-box; */
-
-  /* padding: 80px 15px;
+  padding: 80px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 799px; 
-  background-image: url(img/burger-banner.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  box-sizing: border-box;
-  flex-wrap: wrap; */
-
-
-    padding: 80px 15px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 100vh;   /* 🔥 full screen height */
+  min-height: 799px;   /* 🔥 full screen height */
   height: auto;
-
   background-image: url(img/burger-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;     /* 🔥 most important */
   background-position: center;
-
   box-sizing: border-box;
   flex-wrap: wrap;
 }
@@ -337,14 +312,17 @@ body {
 .btn-bug {
   border: none;
   border-radius: 32px;
-  font-size: 25px;
+  font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
   background-color: #f64b3c;
   font-family: "Montserrat", sans-serif;
-  width: 322px;
-  height: 65px;
+  max-width: 322px;
+  max-height: 65px;
   cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
 }
 .btn-bug:hover {
   background-color: #98190d;
@@ -387,38 +365,36 @@ body {
 
 /* 🔥 CIRCLE FIX */
 .st1 {
-  border: 5px solid #ffffff;
-
-  width: 100%;
-  max-width: 280px;
-
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    border: 5px solid #ffffff;
+    width: 70%;
+    /* max-width: 101px; */
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* 🔥 TEXT FIX */
 .stext-1 {
-  color: #ffffff;
-  font-size: clamp(30px, 6vw, 70px);
-  font-weight: 700;
+    color: #ffffff;
+    font-size: clamp(30px, 20vw, 70px);
+    font-weight: 700;
 }
 
 .stext-2 {
   color: #ffffff;
-  font-size: clamp(14px, 2.5vw, 28px);
+  font-size: clamp(24px, 5vw, 32px);
 }
 /* popular-area-start */
 /* section */
 .popular-area {
-  background-color: #f5eddf;
-  padding: 80px 15px;
-  height: 799px;
-  box-sizing: border-box;
+    background-color: #f5eddf;
+    padding: 80px 15px;
+    min-height: 799px;
+    box-sizing: border-box;
+    height: auto;
 }
 
 /* heading */
@@ -549,24 +525,26 @@ body {
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
+  padding: 0px 15px;
 }
 /* article-area-end */
 
 /* our update-area-end */
 .our-update {
-  background-color: #f6eadf;
-  /* text-align: center; */
-  height: 799px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  background-image: url(img/ourupdate.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+    background-color: #f6eadf;
+    /* text-align: center; */
+    height: 799px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    background-image: url(img/ourupdate.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0 15px;
 }
 .our-text1 {
   font-size: 75px;
@@ -583,8 +561,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 .our-update form {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
 }
 .input2 {
   background-color: #f64b3c;
@@ -604,15 +584,16 @@ body {
   background-color: #98190d;
 }
 .input1 {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 30px 0px 0px 30px;
-  width: 549px;
-  max-width: max-content;
-  height: 63px;
-  outline: none;
-  box-sizing: border-box;
-  padding-left: 25px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    width: 70%;
+    /* max-width: max-content; */
+    height: 63px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 25px;
+    flex: 1;
 }
 
 .input1::placeholder {
@@ -641,11 +622,12 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex-direction: column
 }
 .footer-title {
   flex: 0.5;
+  padding: 30px 0px;
 }
-
 .h5-ti {
   font-size: 31.5px;
   color: #ffffff;
@@ -669,12 +651,21 @@ body {
 }
 
 .fa-icon {
-  background-color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 13px 28px;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+  /* background-color: #ffffff;
   border-radius: 50%;
   padding: 10px 8px;
   font-size: 24px;
-  color: black;
-}
+  color: black; */
+
 .a-text {
   color: #ffffff;
   text-decoration: none;
@@ -736,10 +727,10 @@ body {
     /* .statistics-area {
     padding: 60px 10px;
   } */
-
+/* 
   .st1 {
     max-width: 160px;
-  }
+  } */
 
 }
 /* Tablet */
@@ -753,6 +744,15 @@ body {
   .btext {
     font-size: 7rem;
   }
+  .footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap!important;
+  flex-direction: row;
+}
+.footer-title{
+  padding: 0px;
+}
 }
 @media screen and (min-width:991px) {  
   .burger-section1 .container {
@@ -776,7 +776,10 @@ body {
   padding-bottom: 10px;
 }
 .btn-burger {
-  font-size: 25px;
+    font-size: 25px;
+    width: 322px;
+    height: 65px;
+
 }
 .statext{
   width: 50%;
@@ -788,9 +791,17 @@ body {
   .st1 {
     max-width: 280px;
   }
-
+.btn button {
+  font-size: 25px;
+  width: 322px;
+  height: 65px;
 }
-
+.footer-title{
+  padding: 0px;
+}
+}
+@media screen and (min-width: 750px){
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -800,34 +811,14 @@ body {
   .utext {width:75%;}
 }
 
-@media screen and (min-width: 1366px) {
-  .ptext {
-    width: 65%;
-  }
-  .utext {width:55%;}
-}
-
-
-/* @media screen and (max-width: 1920px) {
-  .btext {
-    font-size: 5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .btext {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .btext {
-    font-size: 2rem;
-  }
-}
 
 @media screen and (max-width: 420px) {
-  .btext {
-    font-size: 2rem;
+   /* .burger-content {
+    text-align: center;
   }
-} */
+
+  .btn-burger {
+    display: block;
+    margin: 20px auto; 
+  } */
+}
