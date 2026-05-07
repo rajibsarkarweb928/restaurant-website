@@ -45,41 +45,51 @@
   <body>
     <!-- HEADER -->
     <div class="header-area container-fluid">
-      <nav class="navbar bg-dark navbar-expand-lg">
-        <div class="container-fluid">
-          <img src="img/logo.jpg" width="60" />
-
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div id="nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="promo.html">Promo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+      <div class="header-text">
+        <nav class="navbar bg-dark navbar-expand-lg w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="logo">
+                <img src="img/logo.jpg" alt="Logo" class="img-fluid" /></div
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="product.html">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promo.html">PROMO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-
-      <h1 class="text-center btext">Our Product</h1>
+        </nav>
+      </div>
+      <div class="banner-content text-center">
+        <h1 class="btext">Our Product</h1>
+      </div>
     </div>
 
     <!-- PRODUCT AREA -->
@@ -348,7 +358,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" id="productModal">
             <img src="" alt="image" height="auto" width="100%"/>
           </div>
             <div class="d-flex  justify-content-evenly pb-4">
@@ -369,7 +379,10 @@
 
 <script>
   function showImage(image) {
-    document.querySelector(".modal-body img").src = image;
+    document.querySelector("#productModal img").src = image;
+    // console.log(image);
+    // const modal = document.getElementById("productModal");
+    // modal.querySelector("img").src = image;
   }
 </script>
 

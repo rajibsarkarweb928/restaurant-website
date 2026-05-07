@@ -26,18 +26,14 @@
     <link rel="stylesheet" href="style.css" />
 
     <style>
-      body {
-        font-family: "Poppins", sans-serif;
+      .body {
+        box-sizing: border-box;
       }
       .header-area {
         background:
           linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url("img/about.jpg") no-repeat center/cover;
+          url("img/promo.jpg") no-repeat center/cover;
         min-height: 300px;
-      }
-      .btext {
-        color: #fff;
-        padding-top: 100px;
       }
     </style>
   </head>
@@ -45,40 +41,146 @@
   <body>
     <!-- HEADER -->
     <div class="header-area container-fluid">
-      <nav class="navbar bg-dark navbar-expand-lg">
-        <div class="container-fluid">
-          <img src="img/logo.jpg" width="60" />
+      <div class="header-text">
+        <nav class="navbar bg-dark navbar-expand-lg w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="logo">
+                <img src="img/logo.jpg" alt="Logo" class="img-fluid" /></div
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="promo.html">PROMO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="promo">
+          <div class="row align-items-center">
+            <!-- LEFT TEXT -->
+            <div class="col-lg-6 text-white">
+              <div class="promo-label mb-3">LIMITED TIME ONLY</div>
 
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+              <h1 class="display-2 fw-bold mb-0">EXCLUSIVE</h1>
+              <h1 class="display-2 fw-bold text-danger mb-3">PROMO DEALS</h1>
 
-          <div id="nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="promo.html">Promo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+              <p class="mb-4">
+                Enjoy our special deals and save more <br />
+                on your favorite burgers!
+              </p>
+
+              <a href="#" class="btn btn-danger px-4 py-2 rounded-pill fw-bold">
+                ORDER NOW →
+              </a>
+            </div>
+
+            <!-- RIGHT EMPTY (image already background) -->
+            <div class="col-lg-6"></div>
           </div>
         </div>
-      </nav>
+
+        <!-- DISCOUNT BADGE -->
+        <div class="discount-badge">
+          <div class="text-center">
+            <small>UP TO</small>
+            <div class="fw-bold fs-3">50%</div>
+            <small>OFF</small>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+    <!-- -offer-card -->
+     <section class="offers-section">
+  <div class="container-fluid">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <h2 class="title">
+        <span class="line"></span>
+        OUR <span class="red">BEST</span> OFFERS
+        <span class="line"></span>
+      </h2>
+      <p>Grab the best deals while they last!</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-4">
+        <div class="offer-card card1">
+          <span class="badge-save">SAVE 30%</span>
+
+          <div class="content">
+            <h5>COUPLE COMBO</h5>
+            <p>2 Burgers<br>2 Fries<br>2 Drinks</p>
+            <h3>$14.99</h3>
+            <button class="btn btn-outline-light btn-sm">ORDER NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-4">
+        <div class="offer-card card2">
+          <span class="badge-save">SAVE 40%</span>
+
+          <div class="content">
+            <h5>FAMILY COMBO</h5>
+            <p>4 Burgers<br>4 Fries<br>4 Drinks</p>
+            <h3>$24.99</h3>
+            <button class="btn btn-outline-light btn-sm">ORDER NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-4">
+        <div class="offer-card card3">
+          <span class="badge-save">SAVE 50%</span>
+
+          <div class="content">
+            <h5>PARTY COMBO</h5>
+            <p>6 Burgers<br>6 Fries<br>6 Drinks</p>
+            <h3>$34.99</h3>
+            <button class="btn btn-outline-light btn-sm">ORDER NOW</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
