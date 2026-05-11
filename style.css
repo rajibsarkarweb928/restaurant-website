@@ -59,7 +59,7 @@ body {
   margin: 0 15px;
 }
 .logo img {
-  height: 55px;
+  height: 50px;
   width: auto;
 }
 .navbar {
@@ -70,10 +70,10 @@ body {
 .navbar a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  padding: 10px 15px;
+  padding: 5px 15px;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -1144,7 +1144,7 @@ p {
   align-items: center;
   padding-left: 60px;
   top: 96px;
-  padding: 30px 15px;
+  padding: 30px 95px;
 }
 
 /* TEXT */
@@ -1435,4 +1435,51 @@ p.offer-subtitle {
   font-size: 12px;
   color: #ccc;
   margin: 0;
+}
+
+.custom-toggler {
+  padding: 4px 6px;
+  font-size: 12px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  width: 18px;
+  height: 18px;
+  background-size: 100%;
+}
+/* .video-area */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* black overlay effect */
+.video-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.content-map {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
 }
