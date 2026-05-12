@@ -507,7 +507,7 @@ border: none;
 /* .article-area-start */
 .art-text1 {
   font-size: clamp(28px, 2.5vw, 40px);
-  color: #0a0000;
+  color: #c70404;
   /* letter-spacing: 2px; */
   /* line-height: 25px; */
   text-align: center;
@@ -516,7 +516,7 @@ border: none;
 }
 .art-text2 {
   font-size: clamp(35px, 2.5vw, 50px);
-  color: #0a0000;
+  color: #c70404;
   padding-top: 50px;
   font-weight: 400;
   font-family: "Calistoga", serif;
@@ -535,6 +535,7 @@ border: none;
   flex-direction: column;
   box-sizing: border-box;
   padding: 0px 15px;
+  background-attachment: fixed;
 }
 /* article-area-end */
 
@@ -1130,7 +1131,9 @@ p {
 /* .promo-area */
 /* HERO FULL WIDTH */
 .header-area {
-  background: url("img/promo.jpg") no-repeat center/cover;
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/promo.png) no-repeat center / cover;
   min-height: 500px;
   position: relative;
 }
@@ -1145,6 +1148,9 @@ p {
   padding-left: 60px;
   top: 96px;
   padding: 30px 95px;
+}
+.promo p {
+  color: #aaa;
 }
 
 /* TEXT */
@@ -1252,6 +1258,7 @@ p {
 .offer-card p {
   font-size: 14px;
   line-height: 1.6;
+  color: #aaa;
 }
 
 .offer-card h3 {
@@ -1482,4 +1489,60 @@ p.offer-subtitle {
 
   text-align: center;
   color: white;
+}
+
+/* .product-button */
+.pro_button {
+  /* background: #f1f1f1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.custom-pagination {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.custom-pagination .page-link {
+  border: none;
+  background: transparent;
+  color: #8c8c8c;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0;
+  box-shadow: none;
+}
+
+.custom-pagination .active .page-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f64b3c;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-btn {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.next-btn i {
+  font-size: 14px;
+}
+.pronext {
+  color: #f64b3c;
+}
+.next-btn {
+  color: #f64b3c;
 }

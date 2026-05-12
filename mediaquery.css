@@ -7,6 +7,7 @@
     width: 100%;
     padding: 10px 0px;
     color: #f64b3c;
+    font-weight: 700;
   }
   .header-area .logo img {
     height: 32px;
@@ -108,7 +109,7 @@
   }
   .popular-area .package1 {
     min-height: 415px;
-    width: 305px;
+    width: 100%;
     padding: 35px 20px;
   }
   .popular-area .pa-text1 {
@@ -176,6 +177,7 @@
     font-size: 23px;
     min-width: 100%;
     color: #f64b3c;
+    font-weight: 700;
   }
   .header-area .btext {
     padding-top: 35px;

@@ -9,7 +9,10 @@
     gap: 30px;
   }
   .timer.d-flex.align-items-center.justify-content-center.gap-3 {
-    width: 90%;
+    flex-flow: wrap;
+  }
+  .offer2-section .timer .time-box {
+    width: 110px;
   }
   .order-btn {
     background: #fff;
