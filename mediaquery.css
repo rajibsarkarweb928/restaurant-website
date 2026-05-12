@@ -1,9 +1,12 @@
 @media (max-width: 425px) {
-  .header-area,
-  .ptext {
+  .header-area {
+    padding: 0px;
+  }
+  .header-area .ptext {
     font-size: 20px;
     width: 100%;
     padding: 10px 0px;
+    color: #f64b3c;
   }
   .header-area .logo img {
     height: 32px;
@@ -12,31 +15,35 @@
   .header-area .navbar a {
     font-size: 15px;
   }
-  .header-area,
-  .btext {
+  .header-area .btext {
     font-size: 3 rem;
+    color: #f64b3c;
   }
-  .header-area,
-  .btn button {
+  .header-area .btn button {
     font-size: 0.9rem;
   }
   .our-section,
   .h2-text {
     font-size: 3rem;
   }
-  .our-section,
-  .utext {
+  .our-section .utext {
     font-size: 18px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     /* width: 70%; */
   }
   .our-section,
   .utext {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
   }
   .our-section,
   .p-col {
     font-size: 20px;
+  }
+  .our-section .our-space .img-fluid {
+    width: 14rem;
   }
   .burger-section1 .container {
     display: flex;
@@ -57,6 +64,9 @@
   }
   .burger-section1 .burger-text2 .burger-section1 .burger-content {
     text-align: center;
+  }
+  .burger-section1 .burger-img {
+    width: 14rem;
   }
   /* burger-section2 */
   .burger-section2 .container {
@@ -81,6 +91,9 @@
     margin-bottom: 25px;
     font-size: 0.9rem;
   }
+  .burger-section2 .burger-img {
+    width: 14rem;
+  }
   /* .statistics-area */
   .statistics-area .st1 {
     width: 11rem;
@@ -88,16 +101,55 @@
   .statistics-area .st-text {
     font-size: clamp(45px, 6vw, 62px);
   }
+
+  /* popular-area */
   .popular-area .po-text {
     font-size: clamp(45px, 6vw, 62px);
   }
+  .popular-area .package1 {
+    min-height: 415px;
+    width: 305px;
+    padding: 35px 20px;
+  }
+  .popular-area .pa-text1 {
+    font-size: 1.6rem;
+  }
+  .popular-area .pa-text2 {
+    font-size: 1.6rem;
+  }
+  .popular-area .pa-img {
+    width: 70px;
+  }
+  .popular-area .pa-text3 {
+    font-size: 17px;
+    padding: 25px 0px;
+  }
+  .popular-area .btn-pa {
+    width: 72%;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  /* .popular-area .pa-text3 {
+      width: 72%;
+      height: 50px;
+      font-size: 1rem;
+    } */
+
+  /* .article-area */
+  .article-area {
+    height: 500px;
+  }
   /* update-area */
+  .our-update {
+    height: 500px;
+  }
   .our-update .our-text1 {
     font-size: clamp(45px, 6vw, 62px);
     text-align: center;
   }
   .our-update .our-text2 {
-    font-size: 19px;
+    font-size: clamp(18px, 1.5vw, 25px);
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -106,10 +158,92 @@
     height: 45px;
   }
   .our-update .input2 {
-    font-size: 16px;
+    font-size: 14px;
     height: 45px;
   }
   .our-update .input1::placeholder {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-area {
+    padding: 0px;
+  }
+  .header-area .ptext {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 23px;
+    min-width: 100%;
+    color: #f64b3c;
+  }
+  .header-area .btext {
+    padding-top: 35px;
+    color: #f64b3c;
+  }
+  .header-area .banner-content {
+    padding: 80px 0;
+  }
+  /* our-section */
+  .our-section .utext {
+    min-width: 100%;
+    font-size: 20px;
+  }
+  /* burger-section-1 */
+  .burger-section1 .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .burger-section1 .burger-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .burger-section1 .burger-text1 {
+    margin: 0px;
+  }
+  .burger-section1 .burger-text2 {
+    font-size: 22px;
+    padding: 25px 0px;
+    text-align: center;
+    margin: 0px;
+  }
+  .burger-section1 .burger-img {
+    max-width: 19rem;
+  }
+  /* burger-section-2 */
+  .burger-section2 .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .burger-section2 .burger-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+  .burger-section2 .burger-t1 {
+    margin: 0px;
+  }
+  .burger-section2 .burger-t2 {
+    font-size: 22px;
+    padding: 25px 0px;
+    text-align: center;
+    margin: 0px;
+  }
+  .burger-section2 .burger-img {
+    max-width: 19rem;
+  }
+  .burger-section2 .btn-bug {
+    margin: 0px;
+  }
+  .statistics-area .statext {
+    font-size: 22px;
+  }
+  /* popular-area */
+  .popular-area .po-text {
+    font-size: 60px;
   }
 }
