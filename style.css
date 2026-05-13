@@ -1247,13 +1247,25 @@ p {
   background-position: center;
 }
 .card1 {
-  background-image: url(img/b1.png);
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/b1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card2 {
-  background-image: url(img/b2.png);
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/b1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card3 {
-  background-image: url(img/b3.png);
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/b1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* TEXT */
 .offer-card .content {
