@@ -89,6 +89,15 @@ body {
   line-height: 1;
   padding-top: 90px;
 }
+.b2text {
+  /* font-size: clamp(3rem, 5vw, 5rem); */
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  line-height: 1;
+  padding-top: 90px;
+}
 .ptext {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1144,10 +1153,12 @@ p {
   z-index: 2;
   /* min-height: 500px; */
   /* display: flex; */
-  align-items: center;
-  padding-left: 60px;
+  /* align-items: center; */
+  /* padding-left: 60px; */
   top: 96px;
-  padding: 30px 95px;
+  padding: 50px 0px;
+  width: 90%;
+  margin: auto;
 }
 .promo p {
   color: #aaa;
@@ -1236,13 +1247,13 @@ p {
   background-position: center;
 }
 .card1 {
-  background-image: url(img/b1.jpg);
+  background-image: url(img/b1.png);
 }
 .card2 {
-  background-image: url(img/b2.jpg);
+  background-image: url(img/b2.png);
 }
 .card3 {
-  background-image: url(img/b3.jpg);
+  background-image: url(img/b3.png);
 }
 /* TEXT */
 .offer-card .content {

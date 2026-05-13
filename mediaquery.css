@@ -6,7 +6,7 @@
     font-size: 20px;
     width: 100%;
     padding: 10px 0px;
-    color: #f64b3c;
+    color: #ffffff;
     font-weight: 700;
   }
   .header-area .logo img {
@@ -16,9 +16,10 @@
   .header-area .navbar a {
     font-size: 15px;
   }
-  .header-area .btext {
+  .header-area .b2text {
     font-size: 3 rem;
-    color: #f64b3c;
+    /* color: #f64b3c; */
+    color: #ffffff !important;
   }
   .header-area .btn button {
     font-size: 0.9rem;
@@ -176,12 +177,14 @@
     padding-bottom: 25px;
     font-size: 23px;
     min-width: 100%;
-    color: #f64b3c;
+    /* color: #f64b3c; */
+    color: #ffffff;
     font-weight: 700;
   }
-  .header-area .btext {
+  .header-area .b2text {
     padding-top: 35px;
-    color: #f64b3c;
+    /* color: #f64b3c; */
+    color: #ffffff;
   }
   .header-area .banner-content {
     padding: 80px 0;
@@ -247,5 +250,16 @@
   /* popular-area */
   .popular-area .po-text {
     font-size: 60px;
+  }
+}
+
+@media (max-width: 1219px) {
+  .d-flex.align-items-center.justify-content-between.g-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .offer2-section {
+    padding: 40px 15px !important;
   }
 }

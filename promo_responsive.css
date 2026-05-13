@@ -23,4 +23,17 @@
     font-weight: 600;
     margin: 40px 0px;
   }
+  .promo .btn {
+    font-size: 13px;
+  }
+  .promo_page .discount-badge {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .promo-feature {
+    gap: 30px;
+  }
 }
