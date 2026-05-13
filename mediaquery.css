@@ -7,7 +7,7 @@
     width: 100%;
     padding: 10px 0px;
     color: #ffffff;
-    font-weight: 700;
+    /* font-weight: 700; */
   }
   .header-area .logo img {
     height: 32px;
@@ -179,7 +179,7 @@
     min-width: 100%;
     /* color: #f64b3c; */
     color: #ffffff;
-    font-weight: 700;
+    /* font-weight: 700; */
   }
   .header-area .b2text {
     padding-top: 35px;

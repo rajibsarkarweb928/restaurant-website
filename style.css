@@ -91,7 +91,7 @@ body {
 }
 .b2text {
   /* font-size: clamp(3rem, 5vw, 5rem); */
-  font-size: 4rem;
+  font-size: clamp(3rem, 5vw, 5rem);
   color: #ffffff;
   font-weight: 700;
   font-family: "Archivo", sans-serif;
@@ -101,7 +101,7 @@ body {
 .ptext {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-size: 32px;
+  font-size: 25px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Nunito";
