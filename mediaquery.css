@@ -1,4 +1,8 @@
 @media (max-width: 425px) {
+  .ul-p {
+    padding: 20px 0px;
+    margin-bottom: 0px !important;
+  }
   .header-area {
     padding: 0px;
   }
@@ -171,6 +175,7 @@
 @media (max-width: 800px) {
   .ul-p {
     padding: 20px 0px;
+    margin-bottom: 0px !important;
   }
   .header-area {
     padding: 0px;
